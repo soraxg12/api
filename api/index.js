@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.send("lastRequest");
 });
 
+app.post('/save-teste', (req, res) => {
+  lastRequest = req.body;
+  res.send();
+});
+
 // Rota para salvar o request
 app.post('/save-request', (req, res) => {
   lastRequest = req.body;

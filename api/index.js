@@ -4,6 +4,9 @@ const app = express();
 let lastRequest = null;
 
 app.use(express.json()); // Middleware para parsear JSON
+app.get('/', (req, res) => {
+    res.send("lastRequest");
+});
 
 // Rota para salvar o request
 app.post('/save-request', (req, res) => {

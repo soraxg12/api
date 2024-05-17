@@ -19,7 +19,7 @@ app.post('/save-request', (req, res) => {
     "departmentUUID": "08bd4c24-f360-4b75-9f6b-7a409ca2d53a",
     "text": "Redirecionando para atendimento.",
     "callback": {
-      "endpoint": "https://api-wheat-theta.vercel.app/get-last-request",
+      "endpoint": "https://api-wheat-theta.vercel.app/save-request",
       "data": {
       "example": "Additional information"
       }
